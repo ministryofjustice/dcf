@@ -69,6 +69,6 @@ class CaseFilesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def case_file_params
-      params[:case_file]
+      params.require(:case_file).permit(:event_type, :event_date)
     end
 end

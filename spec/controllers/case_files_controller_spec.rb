@@ -24,11 +24,17 @@ RSpec.describe CaseFilesController, type: :controller do
   # CaseFile. As you add validations to CaseFile, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    {
+      event_date: Date.today,
+      event_type: 'CaseFile'
+    }
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    {
+      event_date: 2.days.from_now,
+      event_type: 'Rubbish'
+    }
   }
 
   # This should return the minimal set of values that should be in the session

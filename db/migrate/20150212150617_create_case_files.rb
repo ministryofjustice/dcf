@@ -1,6 +1,6 @@
-class CreateCases < ActiveRecord::Migration
+class CreateCaseFiles < ActiveRecord::Migration
   def change
-    create_table :cases do |t|
+    create_table :case_files do |t|
       t.date :event_date
       t.string :event_type
       t.string :pti_urn

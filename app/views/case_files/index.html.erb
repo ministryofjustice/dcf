@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Cases</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Event date</th>
+      <th>Event type</th>
+      <th>Pti urn</th>
+      <th>Version</th>
+      <th>Case markers</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @case_files.each do |case_file| %>
+      <tr>
+        <td><%= case_file.event_date %></td>
+        <td><%= case_file.event_type %></td>
+        <td><%= case_file.pti_urn %></td>
+        <td><%= case_file.version %></td>
+        <td><%= case_file.case_markers %></td>
+        <td><%= link_to 'Show', case_file %></td>
+        <td><%= link_to 'Edit', edit_case_file_path(case_file) %></td>
+        <td><%= link_to 'Destroy', case_file, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Case', new_case_file_path %>

@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20150212150617) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "cases", force: :cascade do |t|
+  create_table "case_files", force: :cascade do |t|
     t.date     "event_date"
     t.string   "event_type"
     t.string   "pti_urn"

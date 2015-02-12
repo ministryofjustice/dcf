@@ -1,0 +1,16 @@
+
+
+Objects:
+
+
+Case < Event
+
+	Event:
+		Date : date
+		Type : string
+	pti_urn : string
+	associated_case_urns: array of strings
+	version : integer
+	case_markers : array of CaseMarker
+
+	

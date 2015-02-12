@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Event date:</strong>
+  <%= @case.event_date %>
+</p>
+
+<p>
+  <strong>Event type:</strong>
+  <%= @case.event_type %>
+</p>
+
+<p>
+  <strong>Pti urn:</strong>
+  <%= @case.pti_urn %>
+</p>
+
+<p>
+  <strong>Version:</strong>
+  <%= @case.version %>
+</p>
+
+<p>
+  <strong>Case markers:</strong>
+  <%= @case.case_markers %>
+</p>
+
+<%= link_to 'Edit', edit_case_path(@case) %> |
+<%= link_to 'Back', cases_path %>

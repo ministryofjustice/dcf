@@ -12,5 +12,15 @@ Case < Event
 	associated_case_urns: array of strings
 	version : integer
 	case_markers : array of CaseMarker
-
+	brief_description : string
+	has_many witnesses
+	disclosure : disclosure (CommonLawForDisclosure)
+	multimedia_evidence : has many mme
+	application_to_provide_hearsay : boolean
+	hearsay_details : string
+	application_to_provide_expert : boolean
+	expert_details :string
+	test_code: TestCode
 	
+
+rails g scaffold Case event_date:date event_type:string pti_urn:string version:integer case_markers:string

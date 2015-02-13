@@ -1,3 +1,17 @@
+# == Schema Information
+#
+# Table name: case_files
+#
+#  id           :integer          not null, primary key
+#  event_date   :date
+#  event_type   :string(255)
+#  pti_urn      :string(255)
+#  version      :integer
+#  case_markers :string(255)
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#
+
 
 require 'rails_helper'
 
